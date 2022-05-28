@@ -1,0 +1,17 @@
+<div id="root">
+    {{ message }}
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.36/vue.global.min.js"></script>
+
+<script>
+    const HelloVue = {
+        date() {
+            return {
+                message: 'Hello Vue!'
+            }
+        }
+    }
+
+    Vue.createApp(HelloVue).mount('#root');
+</script>
